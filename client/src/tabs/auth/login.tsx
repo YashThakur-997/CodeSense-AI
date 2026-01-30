@@ -15,7 +15,7 @@ const Login = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
+    // Handle login logic here
 
     try {
       const response = await fetch('http://localhost:3000/auth/login', {
@@ -29,7 +29,7 @@ const Login = () => {
       if (response.ok) {
         const data = await response.json();
         document.cookie = `token=${data.token}; path=/;`;
-        navigate('/dashboard', { state: { username: data.username, uploadedServices: data.uploadedServices } });
+        navigate('/homesection', { state: { username: data.username} });
       }
       else {
         console.error('Login failed');
