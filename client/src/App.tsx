@@ -1,6 +1,5 @@
 import Login from "@/tabs/auth/login"
 import Signup from "@/tabs/auth/signup"
-import ForgotPassword from "./tabs/auth/forgetpass"
 import Homesection from "./tabs/features/homesection"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
@@ -13,10 +12,6 @@ function App() {
     {
       path: "/",
       element: <><Login /></>
-    },
-    {
-      path: "/forgot-password",
-      element: <><ForgotPassword /></>
     },
     {
       path: "/homesection",
