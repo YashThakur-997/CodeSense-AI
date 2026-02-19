@@ -1,7 +1,11 @@
 import Login from "@/tabs/auth/login"
 import Signup from "@/tabs/auth/signup"
 import Homesection from "./tabs/features/homesection"
+import Quickstart from "./tabs/features/quickstart"
+import Recentactivity from "./tabs/features/recentactivity"
+import Interview from "./tabs/features/interview"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import reactsvg from "./assets/react.svg"
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +20,18 @@ function App() {
     {
       path: "/homesection",
       element: <><Homesection /></>
+    },
+    {
+      path: "/quickstart",
+      element: <><Quickstart /></>
+    },
+    {
+      path: "/recentactivity",
+      element: <><Recentactivity /></>
+    },
+    {
+      path: "/interview",
+      element: <><Interview username="Yash Thakur" imageUrl={reactsvg} /></>
     }
   ])
 

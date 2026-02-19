@@ -25,7 +25,7 @@ export function Featuredcard({
   return (
     <Card className="relative w-full pt-0 bg-neutral-900/90 border border-neutral-700 rounded-xl shadow-lg overflow-hidden hover:border-neutral-500 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
       <div className="relative">
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-neutral-900 to-transparent" />
+        <div className="absolute inset-0 z-10 bg-linear-to-t from-neutral-900 to-transparent" />
         <img
           src={imageUrl}
           alt={title}
