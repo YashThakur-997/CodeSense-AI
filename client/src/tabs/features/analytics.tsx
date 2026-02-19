@@ -2,8 +2,7 @@ import { GridBackgroundDemo } from '@/components/ui/gridbackground';
 import Navbar from './navbar';
 
 
-function recentactivity() {
-  
+function analytics() {
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-full bg-black">
@@ -16,4 +15,4 @@ function recentactivity() {
   );
 }
 
-export default recentactivity
+export default analytics

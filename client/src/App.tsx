@@ -4,6 +4,7 @@ import Homesection from "./tabs/features/homesection"
 import Quickstart from "./tabs/features/quickstart"
 import Recentactivity from "./tabs/features/recentactivity"
 import Interview from "./tabs/features/interview"
+import Analytics from "./tabs/features/analytics"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import reactsvg from "./assets/react.svg"
 
@@ -32,6 +33,10 @@ function App() {
     {
       path: "/interview",
       element: <><Interview username="Yash Thakur" imageUrl={reactsvg} /></>
+    },
+    {
+      path: "/analytics",
+      element: <><Analytics /></>
     }
   ])
 

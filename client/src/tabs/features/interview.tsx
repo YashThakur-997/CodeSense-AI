@@ -1,5 +1,4 @@
 import { GridBackgroundDemo } from '@/components/ui/gridbackground';
-import { IconHistory, IconHome, IconLogout, IconRocket } from '@tabler/icons-react';
 import { Card } from '@/components/ui/card';
 
 function Interview({username,imageUrl}: {username: string,imageUrl?: string}) { // Capitalized component name (React convention)
@@ -11,20 +10,7 @@ function Interview({username,imageUrl}: {username: string,imageUrl?: string}) { 
     'My greatest strength is my ability to learn quickly and adapt to new technologies.',
   ];
 
-  const links = [
-    { label: "Home", href: "/homesection", icon: <IconHome className="h-9 w-9 text-neutral-100" /> },
-    { label: "Quick start", href: "/quickstart", icon: <IconRocket className="h-9 w-9 text-neutral-100" /> },
-    { label: "Recent activity", href: "/recent_activity", icon: <IconHistory className="h-9 w-9 text-neutral-100" /> },
-    {
-      label: "Logout",
-      href: "/",
-      onClick: () => {
-        document.cookie = 'token=; Max-Age=0; path=/;';
-        window.location.href = '/';
-      },
-      icon: <IconLogout className="h-9 w-9 text-neutral-100" />,
-    },
-  ];
+
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-full bg-black overflow-hidden">
