@@ -1,7 +1,7 @@
-const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "https://osteoblastic-hyperfine-keira.ngrok-free.dev";
+const OLLAMA_BASE_URL = process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434";
 const OLLAMA_CHAT_PATH = process.env.OLLAMA_CHAT_PATH || "/api/chat";
 const OLLAMA_FALLBACK_BASE_URL = process.env.OLLAMA_FALLBACK_BASE_URL || "http://127.0.0.1:11434";
-const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "gemma3:4b";
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "phi3:mini";
 const OLLAMA_TIMEOUT_MS = Number(process.env.OLLAMA_TIMEOUT_MS || 120000);
 const LLM_PROMPT_MAX_CODE_CHARS = Number(process.env.LLM_PROMPT_MAX_CODE_CHARS || 30000);
 const OLLAMA_AUTH_TOKEN = process.env.OLLAMA_AUTH_TOKEN || "";

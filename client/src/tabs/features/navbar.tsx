@@ -16,11 +16,11 @@ const navbar = () => {
             href: "/quickstart",
             icon: <IconRocket className="h-9 w-9 text-neutral-100" />,
         },
-        {
-            label: "Analytics",
-            href: "/analytics",
-            icon: <IconChartBar className="h-9 w-9 text-neutral-100" />,
-        },
+        // {
+        //     label: "Analytics",
+        //     href: "/analytics",
+        //     icon: <IconChartBar className="h-9 w-9 text-neutral-100" />,
+        // },
         {
             label: "Recent activity",
             href: "/recentactivity",

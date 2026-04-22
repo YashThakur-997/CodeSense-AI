@@ -22,8 +22,11 @@
     "express": "^5.2.1",
     "joi": "^18.0.2",
     "jsonwebtoken": "^9.0.3",
+    "multer": "^2.0.2",
     "mongoose": "^9.1.5",
     "nodemon": "^3.1.11",
-    "repomix": "^1.13.1"
+    "repomix": "^1.13.1",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.3"
   }
 }
